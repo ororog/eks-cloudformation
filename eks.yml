@@ -10,9 +10,15 @@ Parameters:
     Type: AWS::EC2::KeyPair::KeyName
   NodeImageId:
     Type: AWS::EC2::Image::Id
-    Description: AMI id for the node instances.
-    Default: ami-0440e4f6b9713faf6
+    Description: |
+      AMI id for the node instances.
+      ami-02d2e0c36bbdb4bc3: Asia Pacific (Tokyo) ap-northeast-1.
+      ami-0a54c984b9f908c81: US East (Ohio) us-east-2.
+      ami-0440e4f6b9713faf6: US East (N. Virginia)	us-east-1.
+      ami-0c7a4976cb6fafd3a: EU (Ireland) eu-west-1.
+    Default: ami-02d2e0c36bbdb4bc3
     AllowedValues:
+      - ami-02d2e0c36bbdb4bc3
       - ami-0a54c984b9f908c81
       - ami-0440e4f6b9713faf6
       - ami-0c7a4976cb6fafd3a
